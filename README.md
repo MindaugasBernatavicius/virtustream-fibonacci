@@ -11,8 +11,8 @@ Please provide a sample project for review:
 
 ## Constraints and assummptions:
 - The design goals for the solution to this problem are: scalability and performance.
-- Scalability defined as - non-degrading performance when the query count increases.
-- Performance defined as - ability to serve 1 query as fast as possible.
+   - Scalability defined as - non-degrading performance when the query count increases.
+   - Performance defined as - ability to serve 1 query as fast as possible.
 - The service is left open - so the ovearloading of it is possible.
 
 ## Solution:
