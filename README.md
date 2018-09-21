@@ -9,6 +9,10 @@ Please provide a sample project for review:
 3. Include some tests
 4. While this project is admittedly trivial, approach it as representing a more complex problem that you'll have to put into production and maintain for several years, with production quality code.
 
-## Solution:
+## Constraints and assummptions:
+- The design goals for the solution to this problem are: scalability and performance.
+- Scalability defined as - non-degrading performance when the query count increases.
+- Performance defined as - ability to serve 1 query as fast as possible.
+- The service is left open - so the ovearloading of it is possible.
 
 ## Solution:
