@@ -11,9 +11,12 @@ __date__    = "2018-09-22"
 
 cache = dict()
 
-def fibonacci(n = 0):
+def fibonacci(n = 0, debug = False):
+    if n < 0:
+        return "Negative number entered: {}. Please use numbers that above 0.".format(n)
     if n not in cache:
-        # print("[{}] NOT in cache".format(n))
+        if debug:
+            print("[{}] NOT in cache".format(n))
         if n == 0:
             fib = 0
         elif (n < 3):
@@ -26,8 +29,8 @@ def fibonacci(n = 0):
             fib = (fibonacci(k + 1) * fibonacci(k + 1) + fibonacci(k) * fibonacci(k))
         cache[n] = fib
     else:
-        # print("[{}] IS in cache".format(n))
-        pass
+        if debug:
+            print("[{}] IS in cache".format(n))
 
     return cache.get(n)
     
