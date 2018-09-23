@@ -24,5 +24,14 @@ def test_possitive_number():
 def test_large_number():
     assert fibonacci(50) == 12586269025
 
-def test_cache_debug_when_true():  
-    assert fibonacci(5, True) == 5
+def test_cache_debug_when_true(capsys):
+    result = fibonacci(5, True)
+    out, err = capsys.readouterr()
+    assert result == 5 
+    assert out == "[5] IS in cache\n"
+    
+def test_cache_debug_when_false(capsys):
+    result = fibonacci(5)
+    out, err = capsys.readouterr()
+    assert result == 5 
+    assert out == ""
