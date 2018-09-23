@@ -7,22 +7,19 @@ A simple router / controler implementation
 from flask import Flask
 from flask import request
 from flask import Response
-from models.fibonacci_generator import fibonacci
+from ..models.fibonacci_generator import fibonacci
 
 __author__  = "Mindaugas Bernatavičius"
 __date__    = "2018-09-22"
 
 
 def create_app():
-    
     app = Flask(__name__)
 
-
     @app.route("/", methods=['GET'])
-    def hello():
+    def root():
         return "Welcome to the Fibonacci sequence generator, use /fib?limit=10\
                 to generate a 10 diggit fibonacci sequence\n"
-
 
     @app.route("/fib", methods=['GET'])
     def fib():
@@ -40,7 +37,6 @@ def create_app():
                 else: 
                     yield str(fibonacci(x, True)) + '\n'
         return Response(generate_fibs(), mimetype='text/plain')
-        
         
     return app
 
