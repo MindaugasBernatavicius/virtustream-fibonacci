@@ -18,13 +18,16 @@ def create_app():
 
     @app.route("/", methods=['GET'])
     def root():
-        return "Welcome to the Fibonacci sequence generator, use /fib?limit=10\
-                to generate a 10 diggit fibonacci sequence\n"
+        return "Welcome to the Fibonacci sequence generator: " +\
+            "use /fib?limit=10 to generate a 10 diggit fibonacci sequence."
 
     @app.route("/fib", methods=['GET'])
     def fib():
-        # TODO :: check if the arguments even exist
         limit = request.args.get('limit')
+        if limit is None:
+            return Response("Please provide a URL query: /?limit=n\n",
+                                            mimetype='text/plain')
+            
         debug = request.args.get('debug')
         # we are streaming the results
         # to offload the origin server asap
