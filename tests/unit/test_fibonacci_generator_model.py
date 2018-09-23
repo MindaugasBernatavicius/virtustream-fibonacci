@@ -1,14 +1,3 @@
-#! /usr/bin/env python3
-
-"""
-A function that returns n-th fibonacci number
-using the fast doubling method and a simple
-caching mechanism
-"""
-
-__author__  = "Mindaugas Bernatavičius"
-__date__    = "2018-09-23"
-
 from ...models.fibonacci_generator import fibonacci
 
 
