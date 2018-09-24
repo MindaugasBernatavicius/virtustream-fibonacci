@@ -32,8 +32,8 @@ Please provide a sample project for review:
 
 ## Deployment procedure:
 ```
-> git clone <repo.url>
-> cd <folder>
+> git clone https://github.com/MindaugasBernatavicius/virtustream-fibonacci.git
+> cd virtustream-fibonacci
 > ./setup.sh
 ```
 
