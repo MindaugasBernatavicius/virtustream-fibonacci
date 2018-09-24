@@ -50,6 +50,6 @@ This launches nginx and uwsgi, which in turn initializes flask backend
 
 Inside virtustream-fibonacci: 
 ```
-./run.sh
+pytest -sv
 ```
 his launches this initialized flask app (no nginx) and runs tests with pytest
