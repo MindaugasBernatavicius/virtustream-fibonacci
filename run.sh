@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 sudo service nginx restart
 if [ $? -eq 0 ]; then
     uwsgi config/vs-fib.ini
