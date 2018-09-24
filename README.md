@@ -34,7 +34,7 @@ Please provide a sample project for review:
 ```
 > git clone <repo.url>
 > cd <folder>
-> 
+> ./setup.sh
 ```
 
 ## Launch procedure:
