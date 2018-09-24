@@ -43,7 +43,9 @@ Inside virtustream-fibonacci:
 ```
 ./run.sh
 ```
-This launches nginx and uwsgi, which in turn initializes flask backend
+This launches nginx and uwsgi, which in turn initializes flask backend, expected output:
+![image](https://user-images.githubusercontent.com/7895269/45942455-1b3cf680-bfeb-11e8-94e2-dc59b50cbdfb.png)
+
 
 ## Launching automated tests:
 
@@ -53,5 +55,4 @@ Inside virtustream-fibonacci:
 pytest -sv
 ```
 his launches this initialized flask app (no nginx) and runs tests with pytest, expected output:
-
 ![image](https://user-images.githubusercontent.com/7895269/45942408-ed57b200-bfea-11e8-9b1e-5ec24c8396a1.png)
