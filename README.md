@@ -52,4 +52,6 @@ Inside virtustream-fibonacci:
 ```
 pytest -sv
 ```
-his launches this initialized flask app (no nginx) and runs tests with pytest
+his launches this initialized flask app (no nginx) and runs tests with pytest, expected output:
+
+![image](https://user-images.githubusercontent.com/7895269/45942408-ed57b200-bfea-11e8-9b1e-5ec24c8396a1.png)
