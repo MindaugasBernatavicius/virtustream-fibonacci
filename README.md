@@ -17,15 +17,25 @@ Please provide a sample project for review:
 - The service is left open - so the ovearloading of it is possible.
 
 ## Design and implementation:
-- The full service has a 2 tier design w/ 4 components:
+- The full service has a 2 tier design with 4 components:
    - An nginx proxy server in front communicating with 
    - The backend python service.
+- The 4 components and justification for using them:
+   - nginx - web server / proxy: provides caching to offload requests from the backend;
+   - uswgi - way to communicate with python backed: simple and well supported;
+   - flask - python framework: lightwight, easilly extendable for future needs and easilly testable;
+   - python - popular, user frienly language with a lot of libraries;
    
 - The full request flow:
   
   ```User --(network)--> nginx --> uwsgi --> flask (router) --> python model (business logic).```
 
 ## Deployment procedure:
+```
+> git clone <repo.url>
+> cd <folder>
+> 
+```
 
 ## Launch procedure:
 
