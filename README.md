@@ -39,10 +39,17 @@ cd virtustream-fibonacci
 
 ## Launch procedure:
 
-Run inside virtustream-fibonacci: 
+Inside virtustream-fibonacci: 
 ```
 ./run.sh
 ```
 This launches nginx and uwsgi, which in turn initializes flask backend
 
 ## Launching automated tests:
+
+
+Inside virtustream-fibonacci: 
+```
+./run.sh
+```
+his launches this initialized flask app (no nginx) and runs tests with pytest
