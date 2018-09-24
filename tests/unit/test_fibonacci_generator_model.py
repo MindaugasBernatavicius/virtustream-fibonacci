@@ -1,4 +1,4 @@
-from ...models.fibonacci_generator import fibonacci
+from models.fibonacci_generator import fibonacci
 
 
 def test_negative_number():
