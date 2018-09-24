@@ -68,3 +68,9 @@ The output of the run script will show requests (when nginx cache is not hit):
 
 Nginx logs are available:
 ![image](https://user-images.githubusercontent.com/7895269/45943192-0f9eff00-bfee-11e8-8f0b-917b98a1a275.png)
+
+There is also the ability to observe how the cache (or memoization) of the fibonacci algorithm itself works, launching the request with ```&debug=True``` query parameter:
+![image](https://user-images.githubusercontent.com/7895269/45943458-07938f00-bfef-11e8-95c2-5a217adccca0.png)
+
+What is displayed in the logs:
+![image](https://user-images.githubusercontent.com/7895269/45943484-272ab780-bfef-11e8-980e-a0bc03f776b8.png)
