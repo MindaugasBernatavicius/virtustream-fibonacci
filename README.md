@@ -36,6 +36,8 @@ git clone https://github.com/MindaugasBernatavicius/virtustream-fibonacci.git
 cd virtustream-fibonacci
 ./setup.sh
 ```
+This will install all the packages that can be found in the setup.sh script. Expected end of output, please inspect the full output for possible errors:
+![image](https://user-images.githubusercontent.com/7895269/45942519-6b1bbd80-bfeb-11e8-86dc-f8f97a189507.png)
 
 ## Launch procedure:
 
