@@ -41,7 +41,7 @@ This will install all the packages that can be found in the setup.sh script. Exp
 
 ## Launch procedure:
 
-Inside virtustream-fibonacci: 
+Inside virtustream-fibonacci:
 ```
 ./run.sh
 ```
@@ -51,10 +51,20 @@ This launches nginx and uwsgi, which in turn initializes flask backend, expected
 
 ## Launching automated tests:
 
-
-Inside virtustream-fibonacci: 
+Inside virtustream-fibonacci:
 ```
 pytest -sv
 ```
 his launches this initialized flask app (no nginx) and runs tests with pytest, expected output:
 ![image](https://user-images.githubusercontent.com/7895269/45942408-ed57b200-bfea-11e8-9b1e-5ec24c8396a1.png)
+
+## Usage and simple debugging:
+
+After launch the application will be available via port 8080 (nginx configured to listen on that port), expected curl output:
+![image](https://user-images.githubusercontent.com/7895269/45943011-5b04dd80-bfed-11e8-96bb-5eb8c195c855.png)
+
+The output of the run script will show requests (when nginx cache is not hit):
+![image](https://user-images.githubusercontent.com/7895269/45943214-1f1e4800-bfee-11e8-9fa6-63fd32bd0ede.png)
+
+Nginx logs are available:
+![image](https://user-images.githubusercontent.com/7895269/45943192-0f9eff00-bfee-11e8-8f0b-917b98a1a275.png)
