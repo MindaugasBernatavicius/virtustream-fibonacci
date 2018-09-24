@@ -22,6 +22,7 @@ Please provide a sample project for review:
    - The backend python service.
    
 - The full request flow:
+  
   ```User --(network)--> nginx --> uwsgi --> flask (router) --> python model (business logic).```
 
 ## Deployment procedure:
