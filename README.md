@@ -61,7 +61,7 @@ his launches this initialized flask app (no nginx) and runs tests with pytest, e
 ## Usage and simple debugging:
 
 After launch the application will be available via port 8080 (nginx configured to listen on that port), expected curl output:
-![image](https://user-images.githubusercontent.com/7895269/45943011-5b04dd80-bfed-11e8-96bb-5eb8c195c855.png)
+![image](https://user-images.githubusercontent.com/7895269/45943299-660c3d80-bfee-11e8-9e2a-6dff062fe250.png)
 
 The output of the run script will show requests (when nginx cache is not hit):
 ![image](https://user-images.githubusercontent.com/7895269/45943214-1f1e4800-bfee-11e8-9fa6-63fd32bd0ede.png)
