@@ -7,7 +7,11 @@ A simple router / controler implementation
 from flask import Flask
 from flask import request
 from flask import Response
-from ..models.fibonacci_generator import fibonacci
+try:
+    from models.fibonacci_generator import fibonacci
+except ImportError as error:
+    from ..models.fibonacci_generator import fibonacci
+
 
 __author__  = "Mindaugas Bernatavičius"
 __date__    = "2018-09-22"
