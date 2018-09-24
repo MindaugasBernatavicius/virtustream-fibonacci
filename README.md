@@ -29,6 +29,29 @@ Please provide a sample project for review:
 - The full request flow:
   
   ```User --(network)--> nginx --> uwsgi --> flask (router) --> python model (business logic).```
+  
+- Folder structure:
+```
+root
+├── config
+│   ├── vs-fib-nginx.conf
+│   └── vs-fib.ini
+├── models
+│   └── fibonacci_generator.py   // memoized fibonacci algorithm
+├── routers
+│   └── fibonacci_service.py     // entrance point for the request, router invokes necessary model based on the URL accessed
+├── run.sh
+├── setup.sh
+└── tests
+    ├── end2end
+    ├── integration
+    │   ├── conftest.py
+    │   └── test_fibonacci_service.py
+    ├── performance
+    ├── security
+    └── unit
+        └── test_fibonacci_generator_model.py
+```
 
 ## Deployment procedure:
 ```
