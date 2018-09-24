@@ -32,9 +32,9 @@ Please provide a sample project for review:
 
 ## Deployment procedure:
 ```
-> git clone https://github.com/MindaugasBernatavicius/virtustream-fibonacci.git
-> cd virtustream-fibonacci
-> ./setup.sh
+git clone https://github.com/MindaugasBernatavicius/virtustream-fibonacci.git
+cd virtustream-fibonacci
+./setup.sh
 ```
 
 ## Launch procedure:
